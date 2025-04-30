@@ -17,20 +17,20 @@ Dev: npm install --save-dev nodemon
 
 # Technologies Used:
 
-1.ReactJS
-2.TypeScript
-3.Javascript
-4.CSS
-5.HTML
-6.API
-7.Firebase Database
-8.JWT
+1. ReactJS    
+2. TypeScript
+3. Javascript
+4. CSS
+5. HTML
+6. API
+7. Firebase Database
+8. JWT
 
 # Backend:
 
-1.At Firebase Authentication the Signup/Login users will display
-2.The Tasks that are added will stores on the firestore database in firebase
-3.Based on username and password the tokens are established to maintain sessions between user and account
+1. At Firebase Authentication the Signup/Login users will display
+2. The Tasks that are added will stores on the firestore database in firebase
+3. Based on username and password the tokens are established to maintain sessions between user and account
 
 # Frontend:
 1. Login,Signup UI
