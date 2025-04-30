@@ -1,73 +1,59 @@
-# Welcome to your Lovable project
+# Task Management Application
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/f302f145-6cec-4948-b43e-76a032393f5d
+Frontend:
+npx create-react-app frontend 
+npm install axios react-router-dom
+npm install -D tailwindcss postcss autoprefixer → npx tailwindcss init -p
+cd frontend && npm start
 
-## How can I edit this code?
+Backend:
+npm init -y
+npm install express cors dotenv
+Dev: npm install --save-dev nodemon
 
-There are several ways of editing your application.
+Technologies Used:
+1.ReactJS
+2.TypeScript
+3.Javascript
+4.CSS
+5.HTML
+6.API
+7.Firebase Database
+8.JWT
 
-**Use Lovable**
+Backend:
+1.At Firebase Authentication the Signup/Login users will display
+2.The Tasks that are added will stores on the firestore database in firebase
+3.Based on username and password the tokens are established to maintain sessions between user and account
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f302f145-6cec-4948-b43e-76a032393f5d) and start prompting.
+Frontend:
+1. Login,Signup UI
+2. Home dashboard consist of Count of total tasks,active atsks,completed tasks count
+3. The Add task button used to add the new task into the list consist of attributes title,description,priority
+   
+Database Schema:
+The fields of the Firebase database are Unique ID,Title,Description, Creationdate,Priority,userid
 
-Changes made via Lovable will be committed automatically to this repo.
+#Sample Task Data at Firebase:
 
-**Use your preferred IDE**
+creationDate  (string)
+"2025-04-30T09:13:02.339Z"
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+description  (string)
+""
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+priority   (string)
+"medium"
 
-Follow these steps:
+status   (string)
+"pending"
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+title  (string)
+"React"
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+userId
+"dynbnmhWyMRZRhJhzTwkRo68KWL22222"
 
-# Step 3: Install the necessary dependencies.
-npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/f302f145-6cec-4948-b43e-76a032393f5d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
